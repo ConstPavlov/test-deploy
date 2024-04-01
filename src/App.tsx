@@ -1,10 +1,9 @@
-import { Link, Outlet } from 'react-router-dom';
-import { createBrowserRouter } from 'react-router-dom';
+import { Link, Outlet, useSearchParams } from 'react-router-dom';
 import './App.css';
 import Counter from './components/Counter';
-import About from './pages/About';
-import Home from './pages/Home';
 function App() {
+  let [searchParam] = useSearchParams();
+  const id = searchParam.get('id');
   return (
     <div className="App">
       <div className="menu">
@@ -12,7 +11,8 @@ function App() {
         <Link to="/home">Home</Link>
         <Link to="/about">About</Link>
       </div>
-      "Hello world, my name s Kostya"
+      <p style={{ fontWeight: 'bold' }}>page id = {id}</p>
+      <h3>"Hello world, my name s Kostya"</h3>
       <Counter />
       <Outlet />
     </div>

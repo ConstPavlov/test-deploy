@@ -1,4 +1,5 @@
 import React from 'react';
+import Karakal from '../assets/img/karakal.jpeg';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         error pariatur voluptatem dolores nam minima ea neque nulla magnam nobis id perspiciatis
         sapiente accusantium veniam nisi, minus aspernatur
       </p>
+      <img style={{ width: '300px' }} src={Karakal} alt="" />
     </div>
   );
 };
