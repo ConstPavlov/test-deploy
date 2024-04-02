@@ -12,7 +12,7 @@ function App() {
         <Link to="/about">About</Link>
       </div>
       <p style={{ fontWeight: 'bold' }}>page id = {id}</p>
-      <h3>"Hello world, my name s Kostya"</h3>
+      <h3>"Hello world, my name s Pavlov Konstantin"</h3>
       <Counter />
       <Outlet />
     </div>
